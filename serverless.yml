@@ -15,7 +15,7 @@ functions:
         memorySize: 512
         timeout: 10
         layers:
-            - ${bref:layer.php-74}
+            - ${bref:layer.php-74-fpm}
             - ${bref:extra.imagick-php-74}
 
 package:
