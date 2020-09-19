@@ -1,0 +1,7 @@
+{
+    "name": "bref/imagick",
+    "require": {
+        "bref/bref": "^0.5.30",
+        "bref/extra-php-extensions": "^0.4.2"
+    }
+}

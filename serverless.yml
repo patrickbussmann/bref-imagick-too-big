@@ -1,0 +1,23 @@
+service: bref-imagick
+
+provider:
+    name: aws
+    region: eu-central-1
+    runtime: provided
+
+plugins:
+    - ./vendor/bref/bref
+    - ./vendor/bref/extra-php-extensions
+
+functions:
+    website:
+        handler: index.php
+        memorySize: 512
+        timeout: 10
+        layers:
+            - ${bref:layer.php-74}
+            - ${bref:extra.imagick-php-74}
+
+package:
+    exclude:
+        - vendor/**
